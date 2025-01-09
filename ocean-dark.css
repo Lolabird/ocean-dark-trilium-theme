@@ -105,9 +105,9 @@ This theme inspired by and meant to be paired with the KDE Plasma theme Ant Dark
 /*****ROOT (COLOR AND FONT KEY)*****/
 :root{
    /***main body (including CKEditor), modal(options menu), and some code colors (see last section for more code colors)*/ 
-   --text-gray: #e6dcbe; /*foreground/default*/
-   --background-gray: #0E111A; /*background 1*/
-   --tree-background-gray: #131520; /*background 2*/
+   --main-text-color: #e6dcbe; /*foreground/default*/
+   --main-background: #0E111A; /*background 1*/
+   --tree-background: #131520; /*background 2*/
    --black: #161925;
    --dark-grey: #6573aa;
    --red: #eb3247;
@@ -162,8 +162,8 @@ html {
 
    /***colors***/
    /*main notes window*/
-   --main-background-color: var(--background-gray);
-   --main-text-color: var(--text-gray);
+   --main-background-color: var(--main-background);
+   --main-text-color: var(--main-text-color);
    --main-border-color: var(--devils-gray-lol);
 
    /*changes the window icons(x, [], -) and some text fields*/
@@ -175,14 +175,14 @@ html {
   /*left, bottom left, and lower upper right icons*/
    --button-background-color: transparent;
    --button-disabled-background-color: var(--table-header-gray);
-   --button-border-color: var(--text-gray);
-   --button-text-color: var(--text-gray);
+   --button-border-color: var(--main-text-color);
+   --button-text-color: var(--main-text-color);
    --button-border-radius: 5px;
 
    /*changes button in label detail*/
    --primary-button-background-color: var(--table-header-gray);
-   --primary-button-text-color:  var(--text-gray);
-   --primary-button-border-color:  var(--text-gray);
+   --primary-button-text-color:  var(--main-text-color);
+   --primary-button-border-color:  var(--main-text-color);
 
    /* "muted-text-color" affects several components, but most are individually styled in this doc, so this should only affect the drop shadow of protected notes titles. */
    --muted-text-color: var(--devils-gray-lol);
@@ -193,39 +193,39 @@ html {
    --input-background-color: var(--sand);
 
    /*changes the 'x' on the note tabs and the right+click and trilium (icon) menus*/
-   --hover-item-text-color: var(--text-gray);
+   --hover-item-text-color: var(--main-text-color);
    /*changes side and right+click menus and note tabs*/
    --hover-item-background-color: var(--soft-gray);
 
    /*tree*/
    --active-item-text-color: var(--soft-gray);
    --active-item-background-color: var(--sand);
-   --left-pane-background-color: var(--tree-background-gray);
-   --left-pane-text-color: var(--text-gray);
+   --left-pane-background-color: var(--tree-background);
+   --left-pane-text-color: var(--main-text-color);
 
    /*right+click menus*/
-   --menu-text-color: var(--text-gray);
-   --menu-background-color: var(--background-gray);
+   --menu-text-color: var(--main-text-color);
+   --menu-background-color: var(--main-background);
 
    /*the options menu*/
-   --modal-background-color: var(--background-gray);
-   --modal-backdrop-color: var(--text-gray);
+   --modal-background-color: var(--main-background);
+   --modal-backdrop-color: var(--main-text-color);
 
    /*left and bottom left menus*/
-   --launcher-pane-background-color: var(--background-gray);
+   --launcher-pane-background-color: var(--main-background);
    --launcher-pane-text-color: var(--sand);
 
    /*tabs*/
    --active-tab-background-color: var(--sand);
-   --active-tab-text-color: var(--background-gray);
+   --active-tab-text-color: var(--main-background);
    --inactive-tab-background-color: var(--table-header-gray);
-   --inactive-tab-text-color: var(--text-gray);
-   --active-tab-hover-background-color: var(--text-gray);
+   --inactive-tab-text-color: var(--main-text-color);
+   --active-tab-hover-background-color: var(--main-text-color);
    --inactive-tab-hover-background-color: var(--soft-gray);
 
    /*general*/
    --scrollbar-border-color: var(--sand);
-   --tooltip-background-color: var(--background-gray);
+   --tooltip-background-color: var(--main-background);
    --link-color: var(--light-turquoise);
 
    --mermaid-theme: dark;
@@ -244,10 +244,10 @@ html {
 }
 .ck-content figure.image>figcaption i {
    font-style: normal;
-   color: var(--text-gray);
+   color: var(--main-text-color);
 }
 .ck-content figure.image>figcaption b, .ck-content figure.image>figcaption strong {
-   color: var(--text-gray);
+   color: var(--main-text-color);
 }
 
 
@@ -391,13 +391,13 @@ tr:nth-child(odd) {
    background-color: var(--table-header-gray);
 }
 .ck-content .table table th {
-   background-color: var(--background-gray) !important;
+   background-color: var(--main-background) !important;
 }
 .ck-content .table table tbody tr:nth-child(odd) th{
    background-color: var(--table-header-gray) !important;
 }
 .ck-content .table table tbody tr:nth-child(even) th{
-   background-color: var(--background-gray) !important;
+   background-color: var(--main-background) !important;
 }
 .ck-content .table table {
    width: 100%;
@@ -443,7 +443,7 @@ li label {
    border-color: var(--soft-sea-green) !important;
 }
 .ck-content .todo-list .todo-list__label>input[checked]:after, .ck-editor__editable.ck-content .todo-list .todo-list__label>span[contenteditable=false]>input[checked]:after {
-   border-color: var(--background-gray);
+   border-color: var(--main-background);
 }
 .ck-content .todo-list .todo-list__label > input:not([checked]):before, .ck-editor__editable.ck-content .todo-list .todo-list__label>span[contenteditable=false]>input:not([checked]):before {
    border: 1px solid var(--red) !important;
@@ -471,10 +471,10 @@ body em, body i {
 }
 .ck-content blockquote i{
    font-style: normal;
-   color: var(--text-gray);
+   color: var(--main-text-color);
 }
 .ck-content blockquote b, .ck-content blockquote strong{
-   color: var(--text-gray);
+   color: var(--main-text-color);
    font-weight: 500;
 }
 .ck-content blockquote code, .ck-content blockquote code i, .ck-content blockquote code strong {
@@ -567,12 +567,12 @@ body .global-menu-button {
 /*****INPUT FIELDS*****/
 /***password and options menu fields***/
 .form-control {
-   color: var(--text-gray) !important;
+   color: var(--main-text-color) !important;
 }
 .form-control:focus {
    color: var(--sand) !important;
    background-color: var(--soft-gray);
-   border-color: var(--text-gray) !important;
+   border-color: var(--main-text-color) !important;
    outline: 0;
    box-shadow: 0 0 0 0.2rem rgb(252 251 179 / 50%) !important;
 }
@@ -585,9 +585,9 @@ body .global-menu-button {
    font-family: var(--header-font-family);
 }
 .note-title:focus {
-   color: var(--text-gray) !important;
+   color: var(--main-text-color) !important;
    background-color: var(--soft-gray) !important;
-   border-color: var(--text-gray) !important;
+   border-color: var(--main-text-color) !important;
    outline: 0;
    box-shadow: 0 0 0 0.2rem rgb(252 251 179 / 50%) !important;
 }
@@ -597,11 +597,11 @@ body .global-menu-button {
    background: #253749 !important /*var(--code-select-gray)*/;
 }
 span.ck-find-result {
-   color: var(--background-gray) !important;
+   color: var(--main-background) !important;
    background: var(--sand);
 }
 span.ck-find-result_selected {
-   color: var(--background-gray) !important;
+   color: var(--main-background) !important;
    background: var(--tan);
 }
 
@@ -631,9 +631,9 @@ input.form-control.note-autocomplete.note-autocomplete-input.aa-input {
 
 /***primary and secondary buttons***/
 button:focus :not(.close) :not(.help-button) :not(.ck-button-save) :not(.ck-button-cancel), .btn:focus {
-   color: var(--text-gray) !important;
+   color: var(--main-text-color) !important;
    background-color: var(--devils-gray-lol) !important;
-   border-color: var(--text-gray) !important;
+   border-color: var(--main-text-color) !important;
    outline: 0;
    box-shadow: 0 0 0 0.2rem rgb(252 251 179 / 50%) !important;
 }
@@ -647,11 +647,11 @@ button:hover :not(.close) :not(.help-button) :not(.ck-button-save) :not(.ck-butt
 /*table field input label*/
 .ck.ck-labeled-field-view>.ck.ck-labeled-field-view__input-wrapper>.ck.ck-label{
    background: var(--soft-gray);
-   color: var(--text-gray);
+   color: var(--main-text-color);
 }
 /*table field and button inputs*/
 .ck.ck-button:active, .ck.ck-button:focus, a.ck.ck-button:active, a.ck.ck-button:focus, .ck.ck-input-text:focus {
-   border: 1px solid var(--text-gray) !important;
+   border: 1px solid var(--main-text-color) !important;
    box-shadow: 0 0 0 0.2rem rgb(252 251 179 / 50%) !important;
 }
 .ck.ck-input-text[readonly]:focus {
@@ -688,7 +688,7 @@ svg.jtk-connector path {
 .note-detail-relation-map .note-box {
    padding: 12px 30px 12px 12px;
    position: absolute !important;
-   background-color: var(--tree-background-gray);
+   background-color: var(--tree-background);
    color: var(--main-text-color);
    z-index: 4;
    border: 1px solid #666;
@@ -723,10 +723,10 @@ div.backlinks-items {
    width: 400px;
    border-radius: 10px;
    background-color: var(--soft-gray);
-   color: var(--text-gray);
+   color: var(--main-text-color);
    padding: 20px;
    overflow-y: auto;
-   box-shadow: 2px 2px 5px  var(--text-gray);
+   box-shadow: 2px 2px 5px  var(--main-text-color);
 }
 div.backlinks-items div:hover {
    background-color: var(--code-select-gray);
@@ -780,7 +780,7 @@ div.backlinks-items div:hover {
 
 /*****ATTRIBUTES POPUP*****/
 .attr-help td {
-   color: var(--text-gray) !important;
+   color: var(--main-text-color) !important;
 }
 
 
@@ -848,7 +848,7 @@ body {
    --ck-color-button-default-hover-background: var(--table-header-gray);
    --ck-color-button-default-active-background: var(--devils-gray-lol);
    --ck-color-button-default-active-shadow: var(--devils-gray-lol); /*thin line on top of active buttons*/
-   --ck-color-button-default-disabled-background:  var(--background-gray); /*disabled buttons*/
+   --ck-color-button-default-disabled-background:  var(--main-background); /*disabled buttons*/
    --ck-color-button-on-color: var(--tan); /*selected property/button*/
 
    /*dropdown buttons*/
@@ -880,11 +880,11 @@ body {
 
    /***overrides the default '.ck-input' class colors***/
    /*--ck-color-input-background: red; /*?*/
-   --ck-color-input-border: var(--text-gray); /*inactive (enabled AND disabled) editable field(editor sub-menus)*/
+   --ck-color-input-border: var(--main-text-color); /*inactive (enabled AND disabled) editable field(editor sub-menus)*/
    /*--ck-color-input-text: red; /*?*/
    --ck-color-input-disabled-background: var(--soft-gray); /*disabled color picker(table sub-menu)*/
-   --ck-color-input-disabled-border: var(--background-gray); /*disabled editor border (table sub-menu)*/
-   --ck-color-input-disabled-text: var(--text-gray); /*editor input text (enable AND disabled)*/
+   --ck-color-input-disabled-border: var(--main-background); /*disabled editor border (table sub-menu)*/
+   --ck-color-input-disabled-text: var(--main-text-color); /*editor input text (enable AND disabled)*/
 
    /***overrides the default '.ck-list' (list menus) class colors***/
    --ck-color-list-background: transparent; /*focus out*/
@@ -903,7 +903,7 @@ body {
 
    /***overrides the default .ck-tooltip class colors***/
    --ck-color-tooltip-background: var(--sand);
-   --ck-color-tooltip-text: var(--background-gray);
+   --ck-color-tooltip-text: var(--main-background);
 
    /* Overrides the default colors used by the ckeditor5-image package.*/
    /*--ck-color-image-caption-background: red; /*?*/
@@ -921,7 +921,7 @@ body {
 
    /*--ck-color-todo-list-checkmark-border: red; /*?*/
 
-   --ck-color-engine-placeholder-text: var(--text-gray); /*caption placeholder text*/
+   --ck-color-engine-placeholder-text: var(--main-text-color); /*caption placeholder text*/
 
    --ck-z-modal: 10000;
 
@@ -939,7 +939,7 @@ NOTE: comments for this section are for how they appear in CSS code notes unless
 /*'...line' is for regular code notes text, not sure what '...line-like' is for*/
 .CodeMirror pre.CodeMirror-line,
 .CodeMirror pre.CodeMirror-line-like {
-   color: var(--text-gray);
+   color: var(--main-text-color);
 }
 
 .CodeMirror-linenumber {color: var(--devils-gray-lol);}
@@ -955,7 +955,7 @@ NOTE: comments for this section are for how they appear in CSS code notes unless
    background-color: var(--code-select-gray);
 }
 .cm-s-default .cm-matchhighlight{
-   color: var(--text-gray) !important;
+   color: var(--main-text-color) !important;
    background-color: var(--table-header-gray);
 }
 
