@@ -104,37 +104,37 @@ This theme inspired by and meant to be paired with Linux theme Juno-Ocean by Eli
 
 /*****ROOT (COLOR KEY)*****/
 :root{
-   /***main body (including CKEditor), modal(options menu), and some code colors (see last section for more code colors)*/ 
-   --main-text-color: #e6dcbe; /*foreground/default*/
-   --main-background: #0E111A; /*background 1*/
-   --tree-background: #131520; /*background 2*/
-   --black: #161925;
-   --dark-grey: #7885b5 /*#6573aa*/;
-   --red: #eb3247;
-   --light-red: #f35645;
-   --green: #94f700;
-   --light-green: #94c800;
-   --brown: #fad32f;
-   --yellow: #c2a325;
-   --blue: #3888ff /*#0066ff*/;
-   --light-blue: #8361ff /*#5e32ff*/;
-   --purple: #ef11ff;
-   --light-purple: #d70fe5 /*#c50ed2*/;
-   --cyan: #5294e2;
-   --light-cyan: #00c1e4;
-   --light-grey: #eec49a;
-   --white: #ffdab4;
-   --deep-blue: #030917;
-   
-   --devils-gray-lol: #666;
-   --sand: #e6dcbe;
-   --tan: #ffdab4;
-   --cool-gray: #5D7576;
-   --light-turquoise: #00a9a5;
-   --soft-sea-green: #107fbc /*#0f76ae*/;
-   --code-select-gray: #253749;
-   --table-header-gray: #161925;
- }
+  /***main body (including CKEditor), modal(options menu), and some code colors (see last section for more code colors)*/ 
+  --main-text-color: #e6dcbe; /*foreground/default*/
+  --main-background: #0E111A; /*background 1*/
+  --tree-background: #131520; /*background 2*/
+  --black: #161925;
+  --dark-grey: #7885b5 /*#6573aa*/;
+  --red: #eb3247;
+  --light-red: #f35645;
+  --green: #94f700;
+  --light-green: #94c800;
+  --brown: #fad32f;
+  --yellow: #c2a325;
+  --blue: #3888ff /*#0066ff*/;
+  --light-blue: #8361ff /*#5e32ff*/;
+  --purple: #ef11ff;
+  --light-purple: #d70fe5 /*#c50ed2*/;
+  --cyan: #5294e2;
+  --light-cyan: #00c1e4;
+  --light-grey: #eec49a;
+  --white: #ffdab4;
+  --deep-blue: #030917;
+  
+  --devils-gray-lol: #666;
+  --sand: #e6dcbe;
+  --tan: #ffdab4;
+  --cool-gray: #5D7576;
+  --light-turquoise: #00a9a5;
+  --soft-sea-green: #107fbc /*#0f76ae*/;
+  --code-select-gray: #253749;
+  --table-header-gray: #161925;
+}
 
 
 /*****HTML (GENERAL STYLES)*****/
@@ -317,7 +317,6 @@ html {
 .ck-content h2 {
   color: var(--white);
   font-weight: 800;
-  /* font-family: var(--header-font-family); */
   font-size: 2rem;
 }
 .ck-content h2 code, .ck-content h2 code b, .ck-content h2 code strong, .ck-content h2 code i, .ck-content h2 code em {
