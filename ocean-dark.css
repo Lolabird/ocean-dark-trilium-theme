@@ -315,9 +315,9 @@ html {
 /*****HEADERS*****/
 /*h1 is not defined, because it's not currently an option for headers in the main body*/
 .ck-content h2 {
-  color: #C0902B;
+  color: var(--white);
   font-weight: 800;
-  font-family: var(--header-font-family);
+  /* font-family: var(--header-font-family); */
   font-size: 2rem;
 }
 .ck-content h2 code, .ck-content h2 code b, .ck-content h2 code strong, .ck-content h2 code i, .ck-content h2 code em {
@@ -326,9 +326,8 @@ html {
 }
 
 .ck-content h3 {
-  color: #B29556;
+  color: var(--white);
   font-weight: 700;
-  font-family: var(--header-font-family);
   font-size: 1.9rem;
 }
 .ck-content h3 code, .ck-content h3 code b, .ck-content h3 code strong, .ck-content h3 code i, .ck-content h3 code em {
@@ -337,9 +336,8 @@ html {
 }
 
 .ck-content h4 {
-  color: #E2B24D;
+  color: var(--white);
   font-weight: 600;
-  font-family: var(--header-font-family);
   font-size: 1.78rem;
 }
 .ck-content h4 code, .ck-content h4 code b, .ck-content h4 code strong, .ck-content h4 code i, .ck-content h4 code em {
@@ -348,9 +346,8 @@ html {
 }
 
 .ck-content h5 {
-  color: #BDA97F;
+  color: var(--white);
   font-weight: 600;
-  font-family: var(--header-font-family);
   font-size: 1.65rem;
 }
 .ck-content h5 code, .ck-content h5 code b, .ck-content h5 code strong, .ck-content h5 code i, .ck-content h5 code em {
@@ -359,9 +356,8 @@ html {
 }
 
 .ck-content h6 {
-  color: var(--tan);
+  color: var(--white);
   font-weight: 600;
-  font-family: var(--header-font-family);
   font-size: 1.53rem;
 }
 .ck-content h6 code, .ck-content h6 code b, .ck-content h6 code strong, .ck-content h6 code i, .ck-content h6 code em {
