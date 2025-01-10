@@ -102,41 +102,39 @@ This theme inspired by and meant to be paired with Linux theme Juno-Ocean by Eli
 }
 
 
-/*****ROOT (COLOR AND FONT KEY)*****/
+/*****ROOT (COLOR KEY)*****/
 :root{
-  /***main body (including CKEditor), modal(options menu), and some code colors (see last section for more code colors)*/ 
-  --main-text-color: #e6dcbe; /*foreground/default*/
-  --main-background: #0E111A; /*background 1*/
-  --tree-background: #131520; /*background 2*/
-  --black: #161925;
-  --dark-grey: #6573aa;
-  --red: #eb3247;
-  --light-red: #f35645;
-  --green: #94f700;
-  --light-green: #94c800;
-  --brown: #fad32f;
-  --yellow: #c2a325;
-  --blue: #0066ff;
-  --light-blue: #5e32ff;
-  --purple: #ef11ff;
-  --light-purple: #c50ed2;
-  --cyan: #5294e2;
-  --light-cyan: #00c1e4;
-  --light-grey: #eec49a;
-  --white: #ffdab4;
-  --deep-blue: #030917;
-  
-  --devils-gray-lol: #666;
-  --soft-gray: #131520;
-  --sand: #e6dcbe;
-  --tan: #ffdab4;
-  --cool-gray: #5D7576;
-  --light-turquoise: #334b78;
-  --soft-sea-green: #00a9a5;
-  --header-font-family: Jost, sans-serif;
-  --code-select-gray: #253749;
-  --table-header-gray: #161925;
-}
+   /***main body (including CKEditor), modal(options menu), and some code colors (see last section for more code colors)*/ 
+   --main-text-color: #e6dcbe; /*foreground/default*/
+   --main-background: #0E111A; /*background 1*/
+   --tree-background: #131520; /*background 2*/
+   --black: #161925;
+   --dark-grey: #6573aa;
+   --red: #eb3247;
+   --light-red: #f35645;
+   --green: #94f700;
+   --light-green: #94c800;
+   --brown: #fad32f;
+   --yellow: #c2a325;
+   --blue: #0066ff;
+   --light-blue: #5e32ff;
+   --purple: #ef11ff;
+   --light-purple: #c50ed2;
+   --cyan: #5294e2;
+   --light-cyan: #00c1e4;
+   --light-grey: #eec49a;
+   --white: #ffdab4;
+   --deep-blue: #030917;
+   
+   --devils-gray-lol: #666;
+   --sand: #e6dcbe;
+   --tan: #ffdab4;
+   --cool-gray: #5D7576;
+   --light-turquoise: #334b78;
+   --soft-sea-green: #00a9a5;
+   --code-select-gray: #253749;
+   --table-header-gray: #161925;
+ }
 
 
 /*****HTML (GENERAL STYLES)*****/
@@ -168,7 +166,7 @@ html {
   --main-border-color: var(--devils-gray-lol);
 
   /*changes the window icons(x, [], -) and some text fields*/
-  --accented-background-color: var(--soft-gray);
+  --accented-background-color: var(--deep-blue);
 
   /*changes the edit icons on text notes and the alert messages*/
   --more-accented-background-color: var(--table-header-gray);
@@ -196,10 +194,10 @@ html {
   /*changes the 'x' on the note tabs and the right+click and trilium (icon) menus*/
   --hover-item-text-color: var(--main-text-color);
   /*changes side and right+click menus and note tabs*/
-  --hover-item-background-color: var(--soft-gray);
+  --hover-item-background-color: var(--deep-blue);
 
   /*tree*/
-  --active-item-text-color: var(--soft-gray);
+  --active-item-text-color: var(--deep-blue);
   --active-item-background-color: var(--sand);
   --left-pane-background-color: var(--tree-background);
   --left-pane-text-color: var(--main-text-color);
@@ -222,7 +220,7 @@ html {
   --inactive-tab-background-color: var(--table-header-gray);
   --inactive-tab-text-color: var(--main-text-color);
   --active-tab-hover-background-color: var(--main-text-color);
-  --inactive-tab-hover-background-color: var(--soft-gray);
+  --inactive-tab-hover-background-color: var(--deep-blue);
 
   /*general*/
   --scrollbar-border-color: var(--sand);
@@ -527,7 +525,7 @@ div.title-bar-buttons.component button, button.icon-action, .icon-action {
 /***Calendar***/
 div.dropdown-menu.dropdown-menu-right > div.calendar-dropdown-widget > div.calendar-body > a.calendar-date:hover, .calendar-dropdown-widget .calendar-btn:hover {
   color: var(--tan) !important;
-  background: var(--soft-gray);
+  background: var(--deep-blue);
 }
 a.calendar-date.calendar-date-exists {
   color: var(--sand);
@@ -542,7 +540,7 @@ a.calendar-date.calendar-date-today {
   color: var(--sand);
 }
 span.fancytree-active > .fancytree-custom-icon {
-  color: var(--soft-gray);
+  color: var(--deep-blue);
 }
 .note-icon-widget button.note-icon {
   border: none !important;
@@ -572,7 +570,7 @@ body .global-menu-button {
 }
 .form-control:focus {
   color: var(--sand) !important;
-  background-color: var(--soft-gray);
+  background-color: var(--deep-blue);
   border-color: var(--main-text-color) !important;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgb(252 251 179 / 50%) !important;
@@ -587,7 +585,7 @@ body .global-menu-button {
 }
 .note-title:focus {
   color: var(--main-text-color) !important;
-  background-color: var(--soft-gray) !important;
+  background-color: var(--deep-blue) !important;
   border-color: var(--main-text-color) !important;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgb(252 251 179 / 50%) !important;
@@ -608,7 +606,7 @@ span.ck-find-result_selected {
 
 /***Modal search active dropdown selection***/
 .aa-dropdown-menu .aa-suggestion.aa-cursor b {
-  color: var(--soft-gray);
+  color: var(--deep-blue);
 }
 
 /***Empty note field***/
@@ -639,7 +637,7 @@ button:focus :not(.close) :not(.help-button) :not(.ck-button-save) :not(.ck-butt
   box-shadow: 0 0 0 0.2rem rgb(252 251 179 / 50%) !important;
 }
 button:hover :not(.close) :not(.help-button) :not(.ck-button-save) :not(.ck-button-cancel), .btn:hover {
-  background-color: var(--soft-gray) !important;
+  background-color: var(--deep-blue) !important;
   color: var(--sand);
   border-color: var(--sand);
 }
@@ -647,7 +645,7 @@ button:hover :not(.close) :not(.help-button) :not(.ck-button-save) :not(.ck-butt
 /***table sub-menu***/
 /*table field input label*/
 .ck.ck-labeled-field-view>.ck.ck-labeled-field-view__input-wrapper>.ck.ck-label{
-  background: var(--soft-gray);
+  background: var(--deep-blue);
   color: var(--main-text-color);
 }
 /*table field and button inputs*/
@@ -674,7 +672,7 @@ button:hover :not(.close) :not(.help-button) :not(.ck-button-save) :not(.ck-butt
 /*backend logs*/
 textarea.backend-log-textarea {
   color: var(--soft-sea-green) !important;
-  background: var(--soft-gray) !important;
+  background: var(--deep-blue) !important;
 }
 
 
@@ -723,7 +721,7 @@ div.backlinks-items {
   right: 10px;
   width: 400px;
   border-radius: 10px;
-  background-color: var(--soft-gray);
+  background-color: var(--deep-blue);
   color: var(--main-text-color);
   padding: 20px;
   overflow-y: auto;
@@ -796,7 +794,7 @@ div.backlinks-items div:hover {
 /*****CODE IN TEXT NOTES)*****/
 /***code blocks***/
 .ck-content pre {
-  background: var(--soft-gray);
+  background: var(--deep-blue);
   font-size: 0.95rem;
   border-color: var(--soft-sea-green);
 }
@@ -816,7 +814,7 @@ pre::after{
 /***inline code***/
 .ck-content code, .ck-content code i, .ck-content code strong  {
   font-size: .95rem;
-  background: var(--soft-gray);
+  background: var(--deep-blue);
   color: var(--soft-sea-green) !important;
   letter-spacing: 1px;
   padding: 0;
@@ -865,14 +863,14 @@ body {
   --ck-color-button-action-active-background: var(--tan) !important; /*find button active and field descritpion*/
   --ck-color-button-action-active-shadow: transparent !important; /*top line*/
   /*--ck-color-button-action-disabled-background: red; /*?*/
-  --ck-color-button-action-text: var(--soft-gray) !important; /*find button(editor sub-menu)*/
+  --ck-color-button-action-text: var(--deep-blue) !important; /*find button(editor sub-menu)*/
 
   /*save and cancel*/
   --ck-color-button-save: var(--soft-sea-green) /*hsl(120, 100%, 46%)*/; /*table sub-menu*/
   --ck-color-button-cancel: hsl(15, 100%, 56%); /*table sub-menu*/
 
   /***overrides the default '.ck-dropdown' class colors (color sub-menus)***/
-  --ck-color-dropdown-panel-background: var(--soft-gray);
+  --ck-color-dropdown-panel-background: var(--deep-blue);
   --ck-color-dropdown-panel-border: var(--devils-gray-lol);
 
   /***overrides the default '.ck-splitbutton' class colors***/
@@ -883,7 +881,7 @@ body {
   /*--ck-color-input-background: red; /*?*/
   --ck-color-input-border: var(--main-text-color); /*inactive (enabled AND disabled) editable field(editor sub-menus)*/
   /*--ck-color-input-text: red; /*?*/
-  --ck-color-input-disabled-background: var(--soft-gray); /*disabled color picker(table sub-menu)*/
+  --ck-color-input-disabled-background: var(--deep-blue); /*disabled color picker(table sub-menu)*/
   --ck-color-input-disabled-border: var(--main-background); /*disabled editor border (table sub-menu)*/
   --ck-color-input-disabled-text: var(--main-text-color); /*editor input text (enable AND disabled)*/
 
@@ -892,14 +890,14 @@ body {
   --ck-color-list-button-hover-background: var(--table-header-gray);
   --ck-color-list-button-on-background:  var(--sand); /*toggled active*/
   --ck-color-list-button-on-background-focus: var(--devils-gray-lol); /*hover on toggled/active*/
-  --ck-color-list-button-on-text: var(--soft-gray); /*toggled/active*/
+  --ck-color-list-button-on-text: var(--deep-blue); /*toggled/active*/
 
   /***overrides the default .ck-balloon-panel class colors (overall look and feel of the editor toolbars and sub-menus)***/
-  --ck-color-panel-background: var(--soft-gray);
+  --ck-color-panel-background: var(--deep-blue);
   --ck-color-panel-border: var(--devils-gray-lol);
 
   /***overrides the default .ck-toolbar class colors***/
-  --ck-color-toolbar-background: var(--soft-gray); /*lots of overlap with the above backgound setting*/
+  --ck-color-toolbar-background: var(--deep-blue); /*lots of overlap with the above backgound setting*/
   --ck-color-toolbar-border: var(--sand); /*section separators*/
 
   /***overrides the default .ck-tooltip class colors***/
@@ -1103,7 +1101,7 @@ code.hljs {
   --icon-dark: var(--sand) !important;
 }
 .theme-selection.component:hover {
-  --icon-dark: var(--soft-gray) !important;
+  --icon-dark: var(--deep-blue) !important;
 }
 
 /***Trilium Chat***/
