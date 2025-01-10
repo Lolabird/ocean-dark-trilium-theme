@@ -109,17 +109,17 @@ This theme inspired by and meant to be paired with Linux theme Juno-Ocean by Eli
    --main-background: #0E111A; /*background 1*/
    --tree-background: #131520; /*background 2*/
    --black: #161925;
-   --dark-grey: #6573aa;
+   --dark-grey: #7885b5 /*#6573aa*/;
    --red: #eb3247;
    --light-red: #f35645;
    --green: #94f700;
    --light-green: #94c800;
    --brown: #fad32f;
    --yellow: #c2a325;
-   --blue: #0066ff;
-   --light-blue: #5e32ff;
+   --blue: #3888ff /*#0066ff*/;
+   --light-blue: #8361ff /*#5e32ff*/;
    --purple: #ef11ff;
-   --light-purple: #c50ed2;
+   --light-purple: #d70fe5 /*#c50ed2*/;
    --cyan: #5294e2;
    --light-cyan: #00c1e4;
    --light-grey: #eec49a;
@@ -130,8 +130,8 @@ This theme inspired by and meant to be paired with Linux theme Juno-Ocean by Eli
    --sand: #e6dcbe;
    --tan: #ffdab4;
    --cool-gray: #5D7576;
-   --light-turquoise: #334b78;
-   --soft-sea-green: #00a9a5;
+   --light-turquoise: #00a9a5;
+   --soft-sea-green: #107fbc /*#0f76ae*/;
    --code-select-gray: #253749;
    --table-header-gray: #161925;
  }
