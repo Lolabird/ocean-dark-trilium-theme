@@ -215,11 +215,11 @@ html {
   --launcher-pane-text-color: var(--sand);
 
   /*tabs*/
-  --active-tab-background-color: var(--sand);
+  --active-tab-background-color: var(--main-text-color);
   --active-tab-text-color: var(--main-background);
   --inactive-tab-background-color: var(--table-header-gray);
   --inactive-tab-text-color: var(--main-text-color);
-  --active-tab-hover-background-color: var(--main-text-color);
+  --active-tab-hover-background-color: var(--tan);
   --inactive-tab-hover-background-color: var(--deep-blue);
 
   /*general*/
