@@ -433,8 +433,8 @@ li label {
   line-height: 2rem;
 }
 .ck-content .todo-list .todo-list__label>input[checked]:before, .ck-editor__editable.ck-content .todo-list .todo-list__label>span[contenteditable=false]>input[checked]:before{
-  background: var(--soft-sea-green);
-  border-color: var(--soft-sea-green) !important;
+  background: var(--light-turquoise);
+  border-color: var(--light-turquoise) !important;
 }
 .ck-content .todo-list .todo-list__label>input[checked]:after, .ck-editor__editable.ck-content .todo-list .todo-list__label>span[contenteditable=false]>input[checked]:after {
   border-color: var(--main-background);
@@ -1101,7 +1101,7 @@ code.hljs {
 
 /***Trilium Chat***/
 .chat-wrapper {
-  --trilium-green: var(--soft-sea-green);
+  --trilium-green: var(--light-turquoise);
 }
 .chat-wrapper .header_face:hover {
   color: var(--sand) !important;
