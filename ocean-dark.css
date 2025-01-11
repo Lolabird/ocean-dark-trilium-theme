@@ -111,7 +111,7 @@ This theme inspired by and meant to be paired with Linux theme Juno-Ocean by Eli
  --black: #161925;
  --dark-grey: #7885b5 /*#6573aa*/;
  --red: #eb3247;
- --light-red: #ff3981 /*#f35645*/;
+ --light-red: #f29b7e /*#f35645*/;
  --green: #00f763 /*#94f700*/;
  --light-green: #00f7a1 /*#94c800*/;
  --brown: #fad32f;
@@ -996,7 +996,7 @@ code.hljs {
 }
 .hljs{
  background:#fff;
- color: --yellow !important;
+ color: yellow !important;
 }
 .hljs-number {
  color: var(--light-green) !important;
