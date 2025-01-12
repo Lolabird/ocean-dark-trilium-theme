@@ -1106,6 +1106,12 @@ code.hljs {
 .chat-wrapper {
  --trilium-green: var(--light-turquoise);
 }
+.chat-wrapper .operate .operate_top .operate_btn {
+    color: var(--dark-gray);
+}
+.chat-wrapper .chat_button {
+    border-color: var(--dark-gray);
+}
 .chat-wrapper .header_face:hover {
  color: var(--carolina-blue) !important;
 }
