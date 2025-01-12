@@ -128,8 +128,8 @@ This theme inspired by and meant to be paired with Linux theme Juno-Ocean by Eli
  --deep-blue: #030917;
  --carolina-blue: #89b4fa;
  
- --devils-gray-lol: #666;
- --cool-gray: #5D7576;
+ --devils-gray-lol: #5d6276 /*#5d6876*/;
+ --cool-gray: #5d6276;
  --light-turquoise: #00f5ef /*#00a9a5*/;
  --soft-sea-green: #149feb /*#107fbc /*#0f76ae*/;
  --code-select-gray: #253749;
@@ -255,7 +255,7 @@ html {
  background-color: transparent !important;
 }
 ::-webkit-scrollbar-thumb:hover{
- border-color: var(--white) !important;
+ border-color: var(--carolina-blue) !important;
 }
 
 
