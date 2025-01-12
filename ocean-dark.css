@@ -198,7 +198,7 @@ html {
 
  /*tree*/
  --active-item-text-color: var(--deep-blue);
- --active-item-background-color: var(--sand);
+ --active-item-background-color: var(--carolina-blue);
  --left-pane-background-color: var(--tree-background);
  --left-pane-text-color: var(--main-text-color);
 
@@ -215,11 +215,11 @@ html {
  --launcher-pane-text-color: var(--sand);
 
  /*tabs*/
- --active-tab-background-color: var(--main-text-color);
+ --active-tab-background-color: var(--carolina-blue);
  --active-tab-text-color: var(--main-background);
- --inactive-tab-background-color: var(--table-header-gray);
- --inactive-tab-text-color: var(--main-text-color);
  --active-tab-hover-background-color: var(--tan);
+ --inactive-tab-background-color: var(--table-header-gray);
+ --inactive-tab-text-color: var(--carolina-blue);
  --inactive-tab-hover-background-color: var(--deep-blue);
 
  /*general*/
@@ -512,6 +512,9 @@ a > i, a > em, a > b, a > strong {
 div.title-bar-buttons.component button, button.icon-action, .icon-action {
  color: var(--sand) !important;
 }
+button.tree-floating-button {
+   color: var(--carolina-blue) !important;
+}
 #launcher-pane .launcher-button:hover, button.tree-floating-button:hover, .title-bar-buttons div:hover button, button.icon-action:hover, .icon-action:hover {
  color: var(--tan) !important;
  border: none !important;
@@ -532,7 +535,7 @@ a.calendar-date.calendar-date-today {
 /***tree***/
 /*note icon*/
 .fancytree-custom-icon {
- color: var(--sand);
+ color: var(--carolina-blue);
 }
 span.fancytree-active > .fancytree-custom-icon {
  color: var(--deep-blue);
