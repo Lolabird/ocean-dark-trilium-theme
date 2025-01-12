@@ -217,7 +217,7 @@ html {
  /*tabs*/
  --active-tab-background-color: var(--carolina-blue);
  --active-tab-text-color: var(--main-background);
- --active-tab-hover-background-color: var(--white);
+ --active-tab-hover-background-color: var(--main-text-color);
  --inactive-tab-background-color: var(--table-header-gray);
  --inactive-tab-text-color: var(--carolina-blue);
  --inactive-tab-hover-background-color: var(--deep-blue);
