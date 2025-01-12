@@ -105,9 +105,10 @@ This theme inspired by and meant to be paired with Linux theme Juno-Ocean by Eli
 /*****ROOT (COLOR KEY)*****/
 :root{
  /***main body (including CKEditor), modal(options menu), and some code colors (see last section for more code colors)*/ 
- --main-text-color: #e6dcbe; /*foreground/default*/
+ --main-text-color: #cdd6f4;
  --main-background: #0E111A; /*background 1*/
  --tree-background: #131520; /*background 2*/
+ --foreground: #e6dcbe; /*foreground/default*/
  --black: #161925;
  --dark-gray: #7885b5 /*#6573aa*/;
  --red: #eb3247;
@@ -294,7 +295,7 @@ html {
 
 /***Only applies if 'Show Position in TOC' widget is in use***/
 .toc-widget span.toc li[style] {
- color: var(--link-color) !important;
+ color: var(--carolina-blue) !important;
 }
 .toc-widget span.toc li:not([style*="color:"]) {
  color: inherit !important;
