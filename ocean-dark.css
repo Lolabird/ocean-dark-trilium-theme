@@ -109,7 +109,7 @@ This theme inspired by and meant to be paired with Linux theme Juno-Ocean by Eli
  --main-background: #0E111A; /*background 1*/
  --tree-background: #131520; /*background 2*/
  --black: #161925;
- --dark-grey: #7885b5 /*#6573aa*/;
+ --dark-gray: #7885b5 /*#6573aa*/;
  --red: #eb3247;
  --light-red: #f29b7e /*#f35645*/;
  --green: #00f763 /*#94f700*/;
@@ -122,7 +122,7 @@ This theme inspired by and meant to be paired with Linux theme Juno-Ocean by Eli
  --light-purple: #d70fe5 /*#c50ed2*/;
  --cyan: #5294e2;
  --light-cyan: #00c1e4;
- --light-grey: #eec49a;
+ --light-gray: #eec49a;
  --white: #ffdab4;
  --deep-blue: #030917;
  --carolina-blue: #89b4fa;
@@ -962,7 +962,7 @@ background-color: var(--code-select-gray);
 .cm-s-default .cm-builtin {color: var(--purple);} /*id-selectors*/
 .cm-s-default .cm-tag {color: var(--green);} /*html tags*/
 .cm-s-default .cm-meta {color: var(--cyan);}  /*meta (browser compatability) tags*/
-.cm-s-default .cm-comment {color: var(--dark-grey);} /*comments*/
+.cm-s-default .cm-comment {color: var(--dark-gray);} /*comments*/
 .cm-s-default .cm-number {color: var(--light-green);} /*numbers including units, not including color codes*/
 .cm-s-default .cm-keyword {color: var(--light-red);} /*color names and keywords*/
 .cm-s-default .cm-attribute {color: var(--carolina-blue);} /*print keyword*/
@@ -1022,7 +1022,7 @@ code.hljs {
  color: var(--blue) !important;
 }
 .hljs-comment,.hljs-quote {
- color: var(--dark-grey) !important;
+ color: var(--dark-gray) !important;
 }
 .hljs-name,.hljs-selector-tag,.hljs-tag,.hljs-deletion,.hljs-selector-attr {
  color: var(--green) !important;
