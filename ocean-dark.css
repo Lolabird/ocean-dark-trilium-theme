@@ -128,7 +128,6 @@ This theme inspired by and meant to be paired with Linux theme Juno-Ocean by Eli
  --deep-blue: #030917;
  --carolina-blue: #89b4fa;
  
- --devils-gray-lol: #5d6276 /*#5d6876*/;
  --cool-gray: #5d6276;
  --light-turquoise: #00f5ef /*#00a9a5*/;
  --soft-sea-green: #149feb /*#107fbc /*#0f76ae*/;
@@ -163,7 +162,7 @@ html {
  /*main notes window*/
  --main-background-color: var(--main-background);
  --main-text-color: var(--main-text-color);
- --main-border-color: var(--devils-gray-lol);
+ --main-border-color: var(--cool-gray);
 
  /*changes the window icons(x, [], -) and some text fields*/
  --accented-background-color: var(--deep-blue);
@@ -184,7 +183,7 @@ html {
  --primary-button-border-color:  var(--main-text-color);
 
  /* "muted-text-color" affects several components, but most are individually styled in this doc, so this should only affect the drop shadow of protected notes titles. */
- --muted-text-color: var(--devils-gray-lol);
+ --muted-text-color: var(--cool-gray);
 
  /*notes title and text fields in options menu and find (ctrl+f) search*/
  --input-text-color: var(--main-text-color);
@@ -487,7 +486,7 @@ a > i, a > em, a > b, a > strong {
 /*****ICONS*****/
 /*main note icon*/
 .note-icon::before {
- color: var(--devils-gray-lol);
+ color: var(--cool-gray);
 }
 .note-icon:hover::before {
  color: var(--carolina-blue);
@@ -502,7 +501,7 @@ a > i, a > em, a > b, a > strong {
 
 /***note properties menu***/
 .ribbon-tab-title-icon {
-  color: var(--devils-gray-lol);
+  color: var(--cool-gray);
 }
 .ribbon-tab-title-icon:hover {
   color: var(--carolina-blue);
@@ -549,7 +548,7 @@ span.fancytree-node.protected > span.fancytree-custom-icon {
 }
 /*drop down icon*/
 .fancytree-expander::before {
- color: var(--devils-gray-lol);
+ color: var(--cool-gray);
 }
 /*tree action buttons*/
 button.tree-floating-button {
@@ -630,7 +629,7 @@ input.form-control.note-autocomplete.note-autocomplete-input.aa-input {
 /***primary and secondary buttons***/
 button:focus :not(.close) :not(.help-button) :not(.ck-button-save) :not(.ck-button-cancel), .btn:focus {
  color: var(--main-text-color) !important;
- background-color: var(--devils-gray-lol) !important;
+ background-color: var(--cool-gray) !important;
  border-color: var(--main-text-color) !important;
  outline: 0;
  box-shadow: 0 0 0 0.2rem rgb(137, 180, 250 / 50%) !important /*carolina-blue*/;
@@ -844,21 +843,21 @@ body {
  /*general buttons*/
  --ck-color-button-default-background: transparent;
  --ck-color-button-default-hover-background: var(--table-header-gray);
- --ck-color-button-default-active-background: var(--devils-gray-lol);
- --ck-color-button-default-active-shadow: var(--devils-gray-lol); /*thin line on top of active buttons*/
+ --ck-color-button-default-active-background: var(--cool-gray);
+ --ck-color-button-default-active-shadow: var(--cool-gray); /*thin line on top of active buttons*/
  --ck-color-button-default-disabled-background:  var(--main-background); /*disabled buttons*/
  --ck-color-button-on-color: var(--white); /*selected property/button*/
 
  /*dropdown buttons*/
  --ck-color-button-on-background: var(--code-select-gray); /*active*/
  --ck-color-button-on-hover-background: var(--table-header-gray); /*hover*/
- --ck-color-button-on-active-background: var(--devils-gray-lol); /*exit click on active*/
+ --ck-color-button-on-active-background: var(--cool-gray); /*exit click on active*/
  --ck-color-button-on-active-shadow: transparent; /*top line on exit click of active*/
  /*--ck-color-button-on-disabled-background: red; /*?*/
 
  /*find button (editor sub-menu)*/
  --ck-color-button-action-background: var(--white) !important;
- --ck-color-button-action-hover-background: var(--devils-gray-lol) !important;
+ --ck-color-button-action-hover-background: var(--cool-gray) !important;
  --ck-color-button-action-active-background: var(--white) !important; /*find button active and field descritpion*/
  --ck-color-button-action-active-shadow: transparent !important; /*top line*/
  /*--ck-color-button-action-disabled-background: red; /*?*/
@@ -870,10 +869,10 @@ body {
 
  /***overrides the default '.ck-dropdown' class colors (color sub-menus)***/
  --ck-color-dropdown-panel-background: var(--deep-blue);
- --ck-color-dropdown-panel-border: var(--devils-gray-lol);
+ --ck-color-dropdown-panel-border: var(--cool-gray);
 
  /***overrides the default '.ck-splitbutton' class colors***/
- --ck-color-split-button-hover-background: var(--devils-gray-lol);
+ --ck-color-split-button-hover-background: var(--cool-gray);
  --ck-color-split-button-hover-border: var(--soft-sea-green);
 
  /***overrides the default '.ck-input' class colors***/
@@ -888,12 +887,12 @@ body {
  --ck-color-list-background: transparent; /*focus out*/
  --ck-color-list-button-hover-background: var(--table-header-gray);
  --ck-color-list-button-on-background:  var(--main-text-color); /*toggled active*/
- --ck-color-list-button-on-background-focus: var(--devils-gray-lol); /*hover on toggled/active*/
+ --ck-color-list-button-on-background-focus: var(--cool-gray); /*hover on toggled/active*/
  --ck-color-list-button-on-text: var(--deep-blue); /*toggled/active*/
 
  /***overrides the default .ck-balloon-panel class colors (overall look and feel of the editor toolbars and sub-menus)***/
  --ck-color-panel-background: var(--deep-blue);
- --ck-color-panel-border: var(--devils-gray-lol);
+ --ck-color-panel-border: var(--cool-gray);
 
  /***overrides the default .ck-toolbar class colors***/
  --ck-color-toolbar-background: var(--deep-blue); /*lots of overlap with the above backgound setting*/
@@ -908,7 +907,7 @@ body {
  /*--ck-color-image-caption-text: red; /*?*/
 
  /***overrides the default colors used by the ckeditor5-widget (image/table) package***/
- --ck-color-widget-blurred-border: var(--devils-gray-lol); /*shows up briefly after switching tabs*/
+ --ck-color-widget-blurred-border: var(--cool-gray); /*shows up briefly after switching tabs*/
  --ck-color-widget-hover-border: var(--main-text-color); /*object in focus*/
  --ck-color-widget-editable-focus-background: var(--table-header-gray); /*table caption in focus*/
 
@@ -940,9 +939,9 @@ NOTE: comments for this section are for how they appear in CSS code notes unless
  color: var(--main-text-color);
 }
 
-.CodeMirror-linenumber {color: var(--devils-gray-lol);}
+.CodeMirror-linenumber {color: var(--cool-gray);}
 .CodeMirror-cursor {
- border-left: 1px solid var(--devils-gray-lol);
+ border-left: 1px solid var(--cool-gray);
 }
 
 /***highlighted and selected text in code notes***/
