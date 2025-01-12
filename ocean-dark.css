@@ -571,7 +571,7 @@ body .global-menu-button {
  background-color: var(--deep-blue);
  border-color: var(--main-text-color) !important;
  outline: 0;
- box-shadow: 0 0 0 0.2rem rgb(137, 180, 250 / 50%) !important /*carolina-blue*/;
+ box-shadow: 0 0 0 0.2rem rgb(137 180 250 / 50%) !important /*carolina-blue*/;
 }
 
 .component.title-row{
@@ -586,7 +586,7 @@ body .global-menu-button {
  background-color: var(--deep-blue) !important;
  border-color: var(--main-text-color) !important;
  outline: 0;
- box-shadow: 0 0 0 0.2rem rgb(137, 180, 250 / 50%) !important /*carolina-blue*/;
+ box-shadow: 0 0 0 0.2rem rgb(137 180 250 / 50%) !important /*carolina-blue*/;
 }
 
 /***selection and find/replace (button)***/
@@ -632,7 +632,7 @@ button:focus :not(.close) :not(.help-button) :not(.ck-button-save) :not(.ck-butt
  background-color: var(--cool-gray) !important;
  border-color: var(--main-text-color) !important;
  outline: 0;
- box-shadow: 0 0 0 0.2rem rgb(137, 180, 250 / 50%) !important /*carolina-blue*/;
+ box-shadow: 0 0 0 0.2rem rgb(137 180 250 / 50%) !important /*carolina-blue*/;
 }
 button:hover :not(.close) :not(.help-button) :not(.ck-button-save) :not(.ck-button-cancel), .btn:hover {
  background-color: var(--deep-blue) !important;
@@ -649,7 +649,7 @@ button:hover :not(.close) :not(.help-button) :not(.ck-button-save) :not(.ck-butt
 /*table field and button inputs*/
 .ck.ck-button:active, .ck.ck-button:focus, a.ck.ck-button:active, a.ck.ck-button:focus, .ck.ck-input-text:focus {
  border: 1px solid var(--main-text-color) !important;
- box-shadow: 0 0 0 0.2rem rgb(137, 180, 250 / 50%) !important /*carolina-blue*/;
+ box-shadow: 0 0 0 0.2rem rgb(137 180 250 / 50%) !important /*carolina-blue*/;
 }
 .ck.ck-input-text[readonly]:focus {
  border: 1px solid var(--ck-color-input-disabled-border) !important;
@@ -1114,4 +1114,14 @@ code.hljs {
 }
 .chat-wrapper .header_face:hover {
  color: var(--carolina-blue) !important;
+}
+
+/***Breadcrumbs***/
+#breadcrumbs a {
+    display: inline-flex;
+    line-height: 1;
+    padding: 5px 10px;
+    background-color: rgba(137, 180, 250, 0.1) !important;
+    border-radius: 12px;
+    transition: transform 200ms ease, background-color 200ms ease, filter 200ms ease;
 }
