@@ -211,7 +211,7 @@ html {
 
  /*left and bottom left menus*/
  --launcher-pane-background-color: var(--main-background);
- --launcher-pane-text-color: var(--main-text-color);
+ --launcher-pane-text-color: var(--dark-gray);
 
  /*tabs*/
  --active-tab-background-color: var(--carolina-blue);
@@ -222,7 +222,7 @@ html {
  --inactive-tab-hover-background-color: var(--deep-blue);
 
  /*general*/
- --scrollbar-border-color: var(--main-text-color);
+ --scrollbar-border-color: var(--dark-gray);
  --tooltip-background-color: var(--main-background);
  --link-color: var(--light-turquoise);
 
@@ -489,11 +489,11 @@ a > i, a > em, a > b, a > strong {
  color: var(--devils-gray-lol);
 }
 .note-icon:hover::before {
- color: var(--main-text-color);
- border-color: var(--main-text-color) !important; /*not working*/
+ color: var(--carolina-blue);
+ border-color: var(--carolina-blue) !important; /*not working*/
 }
 .note-icon:focus::before, .bx-calendar:focus::before {
- color: var(--main-text-color);
+ color: var(--carolina-blue);
 }
 .icon-list {
  color: var(--soft-sea-green);
@@ -504,15 +504,16 @@ a > i, a > em, a > b, a > strong {
   color: var(--devils-gray-lol);
 }
 .ribbon-tab-title-icon:hover {
-  color: var(--main-text-color);
+  color: var(--carolina-blue);
 }
 
 /***launcher, floating tree, icon action and title bar buttons***/
 div.title-bar-buttons.component button, button.icon-action, .icon-action {
- color: var(--main-text-color) !important;
+ color: var(--dark-gray) !important;
 }
 button.tree-floating-button {
    color: var(--carolina-blue) !important;
+   border-color: var(--carolina-blue);
 }
 #launcher-pane .launcher-button:hover, button.tree-floating-button:hover, .title-bar-buttons div:hover button, button.icon-action:hover, .icon-action:hover {
  color: var(--carolina-blue) !important;
@@ -1095,7 +1096,7 @@ code.hljs {
 }
 .theme-selection.component {
  --background-hover-dark: var(--carolina-blue) !important;
- --icon-dark: var(--main-text-color) !important;
+ --icon-dark: var(--dark-gray) !important;
 }
 .theme-selection.component:hover {
  --icon-dark: var(--deep-blue) !important;
