@@ -119,12 +119,13 @@ This theme inspired by and meant to be paired with Linux theme Juno-Ocean by Eli
  --blue: #3888ff /*#0066ff*/;
  --light-blue: #8361ff /*#5e32ff*/;
  --purple: #ef11ff;
- --carolina-blue: #89b4fa /*#d70fe5 /*#c50ed2*/;
+ --light-purple: #d70fe5 /*#c50ed2*/;
  --cyan: #5294e2;
  --light-cyan: #00c1e4;
  --light-grey: #eec49a;
  --white: #ffdab4;
  --deep-blue: #030917;
+ --carolina-blue: #89b4fa;
  
  --devils-gray-lol: #666;
  --main-text-color: #e6dcbe;
@@ -378,7 +379,7 @@ html {
 .ck-content .table table th {
  font-weight: 600 !important;
  font-size: 1.15rem;
- color: var(--main-text-color)
+ color: var(--main-text-color);
 }
 tr:nth-child(odd) {
  background-color: var(--table-header-gray);
@@ -515,7 +516,7 @@ button.tree-floating-button {
    color: var(--carolina-blue) !important;
 }
 #launcher-pane .launcher-button:hover, button.tree-floating-button:hover, .title-bar-buttons div:hover button, button.icon-action:hover, .icon-action:hover {
- color: var(--white) !important;
+ color: var(--carolina-blue) !important;
  border: none !important;
 }
 
@@ -1094,7 +1095,7 @@ code.hljs {
  top: 5.75px !important;
 }
 .theme-selection.component {
- --background-hover-dark: var(--white) !important;
+ --background-hover-dark: var(--carolina-blue) !important;
  --icon-dark: var(--main-text-color) !important;
 }
 .theme-selection.component:hover {
@@ -1106,5 +1107,5 @@ code.hljs {
  --trilium-green: var(--light-turquoise);
 }
 .chat-wrapper .header_face:hover {
- color: var(--main-text-color) !important;
+ color: var(--carolina-blue) !important;
 }
