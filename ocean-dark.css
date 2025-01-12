@@ -233,7 +233,7 @@ html {
 
 /*****Image Caption*****/
 .ck-content figure.image>figcaption {
- font-size: 1rem;
+ font-size: 1.1rem;
  font-weight: 300;
  font-style: oblique;
  color: var(--main-text-color) !important;
@@ -241,9 +241,9 @@ html {
 .ck-content figure.image>figcaption code {
  font-size: .8rem;
 }
-.ck-content figure.image>figcaption i {
+.ck-content figure.image>figcaption i, .ck-content figure.image>figcaption i>b, .ck-content figure.image>figcaption i>strong {
  font-style: normal;
- color: var(--main-text-color);
+ color: var(--carolina-blue);
 }
 .ck-content figure.image>figcaption b, .ck-content figure.image>figcaption strong {
  color: var(--main-text-color);
@@ -315,7 +315,7 @@ html {
 /*****HEADERS*****/
 /*h1 is not defined, because it's not currently an option for headers in the main body*/
 .ck-content h2 {
- color: var(--white);
+ color: #eed99a;
  font-weight: 800;
  font-size: 2rem;
 }
@@ -325,7 +325,7 @@ html {
 }
 
 .ck-content h3 {
- color: var(--white);
+ color: var(--foreground);
  font-weight: 700;
  font-size: 1.9rem;
 }
@@ -345,7 +345,7 @@ html {
 }
 
 .ck-content h5 {
- color: var(--white);
+ color: var(--light-gray);
  font-weight: 600;
  font-size: 1.65rem;
 }
@@ -355,7 +355,7 @@ html {
 }
 
 .ck-content h6 {
- color: var(--white);
+ color: var(--light-red);
  font-weight: 600;
  font-size: 1.53rem;
 }
@@ -368,7 +368,7 @@ html {
 /*****TABLE*****/
 .ck-content .table>figcaption {
  background-color: var(--table-header-gray);
- color: var(--white);
+ color: var(--dark-gray);
  font-size: 1.3rem;
  font-weight: 600;
  font-family: var(--header-font-family);
@@ -379,7 +379,7 @@ html {
 .ck-content .table table th {
  font-weight: 600 !important;
  font-size: 1.15rem;
- color: var(--main-text-color);
+ color: var(--carolina-blue);
 }
 tr:nth-child(odd) {
  background-color: var(--table-header-gray);
@@ -445,10 +445,10 @@ li label {
 
 /***italics and quotes***/
 body em, body i {
-color:var(--main-text-color);
+color:var(--carolina-blue);
 }
 .ck-content blockquote {
- color: var(--main-text-color);
+ color: var(--carolina-blue);
  font-weight: 300;
  font-size: 1.5rem;
  overflow: hidden;
@@ -457,19 +457,19 @@ color:var(--main-text-color);
  margin-left: 0;
  margin-right: 0;
  font-style: italic;
- border-left: 3px solid var(--white);
+ border-left: 3px solid var(--dark-gray);
 }
 .ck-content blockquote p{
  margin-bottom: 0;
  padding-bottom: .3em;
 }
-.ck-content blockquote i{
+.ck-content blockquote b, .ck-content blockquote strong{
+ color: var(--carolina-blue);
+ font-weight: 500;
+}
+.ck-content blockquote i, .ck-content blockquote i > b, .ck-content blockquote i > strong{
  font-style: normal;
  color: var(--main-text-color);
-}
-.ck-content blockquote b, .ck-content blockquote strong{
- color: var(--main-text-color);
- font-weight: 500;
 }
 .ck-content blockquote code, .ck-content blockquote code i, .ck-content blockquote code strong {
  font-size: 1.1rem;
