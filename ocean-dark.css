@@ -1024,7 +1024,7 @@ code.hljs {
 .hljs-attribute {
  color: var(--carolina-blue) !important;
 }
-.hljs-addition,.hljs-literal,.hljs-section,.hljs-string,.hljs-template-tag,.hljs-template-variable,.hljs-type {
+.hljs-addition,.hljs-literal,.hljs-section,.hljs-string,.hljs-template-tag,.hljs-template-variable,.hljs-type,.hljs-regexp {
  color: var(--yellow) !important;
 }
 .hljs-built_in {
