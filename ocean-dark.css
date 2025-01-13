@@ -614,13 +614,6 @@ input.form-control.note-autocomplete.note-autocomplete-input.aa-input {
 
 
 /*****BUTTONS*****/
-.help-button {
- color: hsl(15, 100%, 56%);
-}
-.help-button:hover {
- color: var(--main-text-color);
-}
-
 /*edit button*/
 .bx-edit-alt {
  height: 40px;
