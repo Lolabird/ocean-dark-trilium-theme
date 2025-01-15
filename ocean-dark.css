@@ -187,8 +187,8 @@ html {
 
  /*notes title and text fields in options menu and find (ctrl+f) search*/
  --input-text-color: var(--main-text-color);
- /*affects find (ctrl+f) search input when inactive*/
- --input-background-color: var(--main-text-color);
+ /*affects all form inputs*/
+ --input-background-color: var(--backround-gray);
 
  /*changes the 'x' on the note tabs and the right+click and trilium (icon) menus*/
  --hover-item-text-color: var(--main-text-color);
