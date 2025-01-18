@@ -234,17 +234,12 @@ html {
 .ck-content figure.image>figcaption {
  font-size: 1.1rem;
  font-weight: 300;
- font-style: oblique;
- color: var(--main-text-color) !important;
+ color: var(--carolina-blue) !important;
 }
 .ck-content figure.image>figcaption code {
  font-size: .8rem;
 }
-.ck-content figure.image>figcaption i, .ck-content figure.image>figcaption i>b, .ck-content figure.image>figcaption i>strong {
- font-style: normal;
- color: var(--carolina-blue);
-}
-.ck-content figure.image>figcaption b, .ck-content figure.image>figcaption strong {
+.ck-content figure.image>figcaption i, .ck-content figure.image>figcaption i>b, .ck-content figure.image>figcaption i>strong, .ck-content figure.image>figcaption b, .ck-content figure.image>figcaption strong {
  color: var(--main-text-color);
 }
 
@@ -422,7 +417,7 @@ tr:nth-child(odd) {
 /*****TEXT DECORATION*****/
 /*bold*/
 body strong, body b {
-color:var(--main-text-color);
+color:var(--carolina-blue);
 font-weight: 700;
 }
 
@@ -443,7 +438,7 @@ li label {
 }
 
 /***italics and quotes***/
-body em, body i {
+body em, body i{
 color:var(--carolina-blue);
 }
 .ck-content blockquote {
@@ -463,7 +458,7 @@ color:var(--carolina-blue);
  padding-bottom: .3em;
 }
 .ck-content blockquote b, .ck-content blockquote strong{
- color: var(--carolina-blue);
+ color: var(--main-text-color);
  font-weight: 500;
 }
 .ck-content blockquote i, .ck-content blockquote i > b, .ck-content blockquote i > strong{
