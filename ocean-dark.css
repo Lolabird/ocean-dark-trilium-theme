@@ -437,47 +437,59 @@ li label {
  border: 1px solid var(--red) !important;
 }
 
-/***italics and quotes***/
-body em, body i{
-color:var(--carolina-blue);
-}
-.ck-content blockquote {
- color: var(--carolina-blue);
- font-weight: 300;
- font-size: 1.5rem;
- overflow: hidden;
- padding-right: 1.5em;
- padding-left: .5em;
- margin-left: 0;
- margin-right: 0;
- font-style: italic;
- border-left: 3px solid var(--dark-gray);
-}
-.ck-content blockquote p{
- margin-bottom: 0;
- padding-bottom: .3em;
-}
-.ck-content blockquote b, .ck-content blockquote strong{
- color: var(--main-text-color);
- font-weight: 500;
-}
-.ck-content blockquote i, .ck-content blockquote i > b, .ck-content blockquote i > strong{
- font-style: normal;
- color: var(--main-text-color);
-}
-.ck-content blockquote code, .ck-content blockquote code i, .ck-content blockquote code strong {
- font-size: 1.1rem;
-}
-.ck-content blockquote code strong {
- font-weight: 700;
-}
-
 /***decorated links***/
 a > i, a > em, a > b, a > strong {
- color: var(--link-color);
-}
-
-
+  color: var(--link-color);
+ }
+ 
+ 
+ /*****CONTENT BOXES*****/
+ /***italics and quotes***/
+ body em, body i{
+ color:var(--carolina-blue);
+ }
+ .ck-content blockquote {
+  color: var(--carolina-blue);
+  font-weight: 300;
+  font-size: 1.5rem;
+  overflow: hidden;
+  padding-right: 1.5em;
+  padding-left: .5em;
+  margin-left: 0;
+  margin-right: 0;
+  font-style: italic;
+  border-left: 3px solid var(--dark-gray);
+ }
+ .ck-content blockquote p{
+  margin-bottom: 0;
+  padding-bottom: .3em;
+ }
+ .ck-content blockquote b, .ck-content blockquote strong{
+  color: var(--main-text-color);
+  font-weight: 500;
+ }
+ .ck-content blockquote i, .ck-content blockquote i > b, .ck-content blockquote i > strong{
+  font-style: normal;
+  color: var(--main-text-color);
+ }
+ .ck-content blockquote code, .ck-content blockquote code i, .ck-content blockquote code strong {
+  font-size: 1.1rem;
+ }
+ .ck-content blockquote code strong {
+  font-weight: 700;
+ }
+ 
+ /***footnotes***/
+ div.footnote-section.ck-widget {
+     border: none;
+     border-top: 1px solid var(--cool-gray);
+     border-radius: 2px;
+     counter-reset: footnote-counter;
+     margin: 2.5rem 0;
+     padding: 10px;
+ }
+ 
+ 
 /*****ICONS*****/
 /*main note icon*/
 .note-icon::before {
