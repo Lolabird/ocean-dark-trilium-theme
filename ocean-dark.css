@@ -479,29 +479,21 @@ a > i, a > em, a > b, a > strong {
   font-weight: 700;
  }
 
- /***notes***/
+ /***asides***/
 .ck-content .admonition.note {
-  --accent-color: #69c7ff;
+  --accent-color: var(--blue) !important;
 }
-
-/***tips***/
 .ck-content .admonition.tip {
-  --accent-color: #40c025;
+  --accent-color: var(--light-purple) !important;
 }
-
-/***important***/
 .ck-content .admonition.important {
-  --accent-color: #9839f7;
+  --accent-color: var(--light-red) !important;
 }
-
-/***caution***/
 .ck-content .admonition.caution {
-  --accent-color: #ff2e2e;
+  --accent-color: var(--red) !important;
 }
-
-/***warning***/
 .ck-content .admonition.warning {
-  --accent-color: #e2aa03;
+  --accent-color: var(--yellow) !important;
 }
  
  /***footnotes***/
