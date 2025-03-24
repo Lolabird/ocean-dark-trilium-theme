@@ -482,21 +482,27 @@ a > i, a > em, a > b, a > strong {
  /***asides***/
 .ck-content .admonition.note {
   --accent-color: var(--blue) !important;
+  --rgb: 56, 136, 255;
 }
 .ck-content .admonition.tip {
   --accent-color: var(--light-purple) !important;
+  --rgb: 215, 15, 229;
 }
 .ck-content .admonition.important {
   --accent-color: var(--light-red) !important;
+  --rgb: 242, 155, 126;
 }
 .ck-content .admonition.caution {
   --accent-color: var(--red) !important;
+  --rgb: 235, 50, 71;
 }
 .ck-content .admonition.warning {
   --accent-color: var(--yellow) !important;
+  --rgb: 222, 195, 84;
 }
 .ck-content aside.admonition {
   /*--accent-color: var(--card-border-color);*/
+  --card-background-color: rgba(var(--rgb), .1);
   border: none;
   border-left: 3px solid var(--accent-color);
   box-shadow: var(--card-box-shadow);
