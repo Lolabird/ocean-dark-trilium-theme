@@ -468,7 +468,7 @@ a > i, a > em, a > b, a > strong {
   color: var(--main-text-color);
   font-weight: 500;
  }
- .ck-content blockquote i, .ck-content blockquote i > b, .ck-content blockquote i > strong{
+ .ck-content blockquote i, .ck-content blockquote i > b, .ck-content blockquote i > strong, .ck-content blockquote em, .ck-content blockquote em > b, .ck-content blockquote em > strong {
   font-style: normal;
   color: var(--main-text-color);
  }
