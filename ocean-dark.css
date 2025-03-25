@@ -18,7 +18,7 @@ This theme inspired by and meant to be paired with Linux theme Juno-Ocean by Eli
 }
 @font-face {
   font-family: "JetBrainsMono";
-  src: url('/custom/themes/EFAD/JetBrainsMono-Bold.woff2') format("woff2");
+  src: url('/custom/themes/EFAD/JetBrainsMfono-Bold.woff2') format("woff2");
   font-weight: 700;
   font-style: normal;
 }
@@ -317,6 +317,9 @@ html {
  font-size: 1.7rem;
  background: transparent;
 }
+.ck-content h2 kbd, .ck-content h2 kbd i, .ck-content h2 kbd b, .ck-content h2 kbd strong {
+ font-size: 1.7rem;
+}
 
 .ck-content h3 {
  color: var(--foreground);
@@ -326,6 +329,9 @@ html {
 .ck-content h3 code, .ck-content h3 code b, .ck-content h3 code strong, .ck-content h3 code i, .ck-content h3 code em {
  font-size: 1.6rem;
  background: transparent;
+}
+.ck-content h3 kbd, .ck-content h3 kbd i, .ck-content h3 kbd b, .ck-content h3 kbd strong {
+ font-size: 1.6rem;
 }
 
 .ck-content h4 {
@@ -337,6 +343,9 @@ html {
  font-size: 1.5rem;
  background: transparent;
 }
+.ck-content h4 kbd, .ck-content h4 kbd i, .ck-content h4 kbd b, .ck-content h4 kbd strong {
+ font-size: 1.5rem;
+}
 
 .ck-content h5 {
  color: var(--light-gray);
@@ -347,6 +356,9 @@ html {
  font-size: 1.4rem;
  background: transparent;
 }
+.ck-content h5 kbd, .ck-content h5 kbd i, .ck-content h5 kbd b, .ck-content h5 kbd strong {
+ font-size: 1.4rem;
+}
 
 .ck-content h6 {
  color: var(--light-red);
@@ -356,6 +368,9 @@ html {
 .ck-content h6 code, .ck-content h6 code b, .ck-content h6 code strong, .ck-content h6 code i, .ck-content h6 code em {
  font-size: 1.3rem;
  background: transparent;
+}
+.ck-content h6 kbd, .ck-content h6 kbd i, .ck-content h6 kbd b, .ck-content h6 kbd strong {
+ font-size: 1.3rem;
 }
 
 
@@ -415,13 +430,15 @@ tr:nth-child(odd) {
 
 
 /*****TEXT DECORATION*****/
-/*bold*/
 body strong, body b {
 color:var(--carolina-blue);
 font-weight: 700;
 }
+body em, body i {
+color:var(--carolina-blue);
+}
 
-/***lists***/
+/*****LISTS*****/
 li label {
  display: inline;
  line-height: 2rem;
@@ -438,125 +455,123 @@ li label {
  background: var(--main-background);
 }
 
-/***decorated links***/
-a > i, a > em, a > b, a > strong {
-  color: var(--link-color);
- }
- 
- 
- /*****CONTENT BOXES*****/
- /***italics and quotes***/
- body em, body i{
- color:var(--carolina-blue);
- }
- .ck-content blockquote {
-  color: var(--carolina-blue);
-  font-weight: 300;
-  font-size: 1.5rem;
-  overflow: hidden;
-  padding-right: 1.5em;
-  padding-left: .5em;
-  margin-left: 0;
-  margin-right: 0;
-  font-style: italic;
-  border-left: 3px solid var(--dark-gray);
- }
- .ck-content blockquote p{
-  margin-bottom: 0;
-  padding-bottom: .3em;
- }
- .ck-content blockquote b, .ck-content blockquote strong{
-  color: var(--main-text-color);
-  font-weight: 500;
- }
- .ck-content blockquote i, .ck-content blockquote i > b, .ck-content blockquote i > strong, .ck-content blockquote em, .ck-content blockquote em > b, .ck-content blockquote em > strong {
-  font-style: normal;
-  color: var(--main-text-color);
- }
- .ck-content blockquote code, .ck-content blockquote code i, .ck-content blockquote code strong {
-  font-size: 1.1rem;
- }
- .ck-content blockquote code strong {
-  font-weight: 700;
- }
 
- /***asides***/
+/*****CARDS*****/
+/***blockquotes***/
+.ck-content blockquote {
+ color: var(--carolina-blue);
+ font-weight: 300;
+ font-size: 1.5rem;
+ overflow: hidden;
+ padding-right: 1.5em;
+ padding-left: .5em;
+ margin-left: 0;
+ margin-right: 0;
+ font-style: italic;
+ border-left: 3px solid var(--dark-gray);
+}
+.ck-content blockquote p {
+ margin-bottom: 0;
+ padding-bottom: .3em;
+}
+.ck-content blockquote b, .ck-content blockquote strong {
+ color: var(--main-text-color);
+ font-weight: 500;
+}
+.ck-content blockquote i, .ck-content blockquote i > b, .ck-content blockquote i > strong, .ck-content blockquote em, .ck-content blockquote em > b, .ck-content blockquote em > strong {
+ font-style: normal;
+ color: var(--main-text-color);
+}
+.ck-content blockquote code, .ck-content blockquote code i, .ck-content blockquote code strong {
+ font-size: 1.1rem;
+}
+.ck-content blockquote code strong {
+ font-weight: 700;
+}
+
+/***asides***/
 .ck-content .admonition.note {
-  --accent-color: var(--blue) !important;
-  --rgb: 56, 136, 255;
+    --accent-color: var(--blue) !important;
+    --rgb: 56, 136, 255;
 }
 .ck-content .admonition.tip {
-  --accent-color: var(--light-purple) !important;
-  --rgb: 215, 15, 229;
+    --accent-color: var(--light-purple) !important;
+    --rgb: 215, 15, 229;
 }
 .ck-content .admonition.important {
-  --accent-color: var(--light-red) !important;
-  --rgb: 242, 155, 126;
+    --accent-color: var(--light-red) !important;
+    --rgb: 242, 155, 126;
 }
 .ck-content .admonition.caution {
-  --accent-color: var(--red) !important;
-  --rgb: 235, 50, 71;
+    --accent-color: var(--red) !important;
+    --rgb: 235, 50, 71;
 }
 .ck-content .admonition.warning {
-  --accent-color: var(--yellow) !important;
-  --rgb: 222, 195, 84;
+    --accent-color: var(--yellow) !important;
+    --rgb: 222, 195, 84;
 }
 .ck-content aside.admonition {
-  /*--accent-color: var(--card-border-color);*/
-  --card-background-color: rgba(var(--rgb), .1);
-  border: none;
-  border-left: 3px solid var(--accent-color);
-  box-shadow: var(--card-box-shadow);
-  background: var(--card-background-color);
-  border-radius: 0;
-  padding: 0;
-  margin: 1.25em 0;
-  margin-right: 14px;
-  position: relative;
-  padding-left: 2em;
-  overflow: hidden;
-  font-weight: 300;
-  font-size: 1.35rem;
+    /*--accent-color: var(--card-border-color);*/
+    --card-background-color: rgba(var(--rgb), .1);
+    border: none;
+    border-left: 3px solid var(--accent-color);
+    box-shadow: var(--card-box-shadow);
+    background: var(--card-background-color);
+    border-radius: 0;
+    padding: 0;
+    margin: 1.25em 0;
+    margin-right: 14px;
+    position: relative;
+    padding-left: 2em;
+    overflow: hidden;
+    font-weight: 300;
+    font-size: 1.35rem;
 }   
 .ck-content aside.admonition::before {
-  color: var(--accent-color);
-  font-family: boxicons !important;
-  position: absolute;
-  top: 0;
-  left: .5em;
+    color: var(--accent-color);
+    font-family: boxicons !important;
+    position: absolute;
+    top: 0;
+    left: .5em;
 }
- 
+
 /***footnotes***/
 /*inline*/
 span.footnote-reference > sup > a {
-  font-weight: 100;
-  font-size: .9em;
+    font-weight: 100;
+    font-size: .9em;
 }
 /*block*/
 div.footnote-section.ck-widget {
-  border: none;
-  border-top: 1px solid var(--cool-gray);
-  border-radius: 0;
-  counter-reset: footnote-counter;
-  margin: 2.5rem 0;
-  padding: 10px 0;
+    border: none;
+    border-top: 1px solid var(--cool-gray);
+    border-radius: 0;
+    counter-reset: footnote-counter;
+    margin: 2.5rem 0;
+    padding: 10px 0;
 }
 .ck-content span.footnote-back-link {
-  margin-right: 0;
-  position: relative;
-  top: 0;
+    margin-right: 0;
+    position: relative;
+    top: 0;
 }
 .ck-content li.footnote-item:before {
-  content: counter(footnote-counter) ". ";
-  display: inline-block;
-  min-width: 25px;
-  position: relative;
-  right: 0.2em;
-  text-align: right;
-  overflow: hidden;
+    content: counter(footnote-counter) ". ";
+    display: inline-block;
+    min-width: 25px;
+    position: relative;
+    right: 0.2em;
+    text-align: right;
+    overflow: hidden;
 }
- 
- 
+
+
+/*****LINKS*****/
+body a * {
+ color: var(--link-color);
+}
+
+
 /*****ICONS*****/
 /*main note icon*/
 .note-icon::before {
@@ -847,8 +862,8 @@ div.backlinks-items div:hover {
  color: var(--main-text-color) !important;
 }
 .tooltip {
-  z-index: 10 !important;
- }
+ z-index: 10 !important;
+}
 
 
 /*****DELETION ALERT*****/
@@ -881,25 +896,26 @@ pre::after{
 
 /***inline code and kbd***/
 .ck-content code, .ck-content code i, .ck-content code strong  {
-  font-size: .95rem;
-  background: var(--deep-blue);
-  color: var(--soft-sea-green) !important;
-  letter-spacing: 1px;
-  padding: .1rem .3rem;
-  border-radius: .25rem;
+    font-size: .95rem;
+    background: var(--deep-blue);
+    color: var(--soft-sea-green) !important;
+    letter-spacing: 1px;
+    padding: .1rem .3rem;
+    border-radius: .25rem;
 }
 .ck-content .ck-code_selected {
-  background-color: var(--code-select-gray) !important;
-  letter-spacing: 1px;
+    background-color: var(--code-select-gray) !important;
+    letter-spacing: 1px;
 }
 .ck-content kbd, .ck-content kbd i, .ck-content kbd strong {
-  font-size: .95rem;
-  letter-spacing: 1px;
-  padding: .1rem .3rem;
-  border-radius: .25rem;
-  background-color: var(--table-header-gray);
-  color: var(--carolina-blue);
+    font-size: .95rem;
+    letter-spacing: 1px;
+    padding: .1rem .3rem;
+    border-radius: .25rem;
+    background-color: var(--table-header-gray);
+    color: var(--carolina-blue);
 }
+
 
 
 /*****CKEDITOR*****/
