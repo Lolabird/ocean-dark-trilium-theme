@@ -230,8 +230,8 @@ html {
 }
 
 *:focus-visible {
-  outline: var(--carolina-blue) auto 1px;
-}
+    outline: var(--carolina-blue) auto 1px;
+}	
 
 
 /*****Image Caption*****/
@@ -295,17 +295,12 @@ html {
 .toc-widget span.toc li[style] {
  color: var(--carolina-blue) !important;
 }
-.toc-widget span.toc li:not([style*="color:"]) {
+.toc-widget span.toc li:not([style*="color:"]), .toc-widget span.toc li:not([style*="color:"]) * {
  color: inherit !important;
 }
 
 .toc-widget .toc li, .highlights-list > ol > li {
  text-align: left;
-}
-.toc kbd {
-  background: transparent;
-  text-decoration: underline;
-  color: inherit;
 }
 
 
@@ -322,12 +317,9 @@ html {
  font-weight: 800;
  font-size: 2rem;
 }
-.ck-content h2 code, .ck-content h2 code b, .ck-content h2 code strong, .ck-content h2 code i, .ck-content h2 code em, .ck-content h2 kbd, .ck-content h2 kbd i, .ck-content h2 kbd b, .ck-content h2 kbd strong {
+.ck-content h2 code, .ck-content h2 code b, .ck-content h2 code strong, .ck-content h2 code i, .ck-content h2 code em {
  font-size: 1.6rem;
  background: transparent;
-}
-.ck-content h2 kbd, .ck-content h2 kbd i, .ck-content h2 kbd b, .ck-content h2 kbd strong {
- text-decoration: underline;
 }
 
 .ck-content h3 {
@@ -335,12 +327,9 @@ html {
  font-weight: 700;
  font-size: 1.9rem;
 }
-.ck-content h3 code, .ck-content h3 code b, .ck-content h3 code strong, .ck-content h3 code i, .ck-content h3 code em, .ck-content h3 kbd, .ck-content h3 kbd i, .ck-content h3 kbd b, .ck-content h3 kbd strong {
+.ck-content h3 code, .ck-content h3 code b, .ck-content h3 code strong, .ck-content h3 code i, .ck-content h3 code em {
  font-size: 1.4rem;
  background: transparent;
-}
-.ck-content h3 kbd, .ck-content h3 kbd i, .ck-content h3 kbd b, .ck-content h3 kbd strong {
- text-decoration: underline;
 }
 
 .ck-content h4 {
@@ -348,12 +337,9 @@ html {
  font-weight: 600;
  font-size: 1.78rem;
 }
-.ck-content h4 code, .ck-content h4 code b, .ck-content h4 code strong, .ck-content h4 code i, .ck-content h4 code em, .ck-content h4 kbd, .ck-content h4 kbd i, .ck-content h4 kbd b, .ck-content h4 kbd strong {
+.ck-content h4 code, .ck-content h4 code b, .ck-content h4 code strong, .ck-content h4 code i, .ck-content h4 code em {
  font-size: 1.3rem;
  background: transparent;
-}
-.ck-content h4 kbd, .ck-content h4 kbd i, .ck-content h4 kbd b, .ck-content h4 kbd strong {
- text-decoration: underline;
 }
 
 .ck-content h5 {
@@ -361,12 +347,9 @@ html {
  font-weight: 600;
  font-size: 1.65rem;
 }
-.ck-content h5 code, .ck-content h5 code b, .ck-content h5 code strong, .ck-content h5 code i, .ck-content h5 code em, .ck-content h5 kbd, .ck-content h5 kbd i, .ck-content h5 kbd b, .ck-content h5 kbd strong {
+.ck-content h5 code, .ck-content h5 code b, .ck-content h5 code strong, .ck-content h5 code i, .ck-content h5 code em {
  font-size: 1.18rem;
  background: transparent;
-}
-.ck-content h5 kbd, .ck-content h5 kbd i, .ck-content h5 kbd b, .ck-content h5 kbd strong {
- text-decoration: underline;
 }
 
 .ck-content h6 {
@@ -374,12 +357,9 @@ html {
  font-weight: 600;
  font-size: 1.53rem;
 }
-.ck-content h6 code, .ck-content h6 code b, .ck-content h6 code strong, .ck-content h6 code i, .ck-content h6 code em, .ck-content h6 kbd, .ck-content h6 kbd i, .ck-content h6 kbd b, .ck-content h6 kbd strong {
+.ck-content h6 code, .ck-content h6 code b, .ck-content h6 code strong, .ck-content h6 code i, .ck-content h6 code em {
  font-size: 1.1rem;
  background: transparent;
-}
-.ck-content h6 kbd, .ck-content h6 kbd i, .ck-content h6 kbd b, .ck-content h6 kbd strong {
- text-decoration: underline;
 }
 
 
@@ -447,10 +427,10 @@ body em, body i {
 color:var(--carolina-blue);
 }
 body u {
-  text-decoration-style: dashed;
+    text-decoration-style: dashed;
 }
-body s {
-  text-decoration-style: double;
+body s, body del {
+    text-decoration-style: double;
 }
 
 
@@ -472,8 +452,7 @@ li label {
 }
 
 
-/*****CARDS*****/
-/***blockquotes***/
+/*****BLOCKQUOTES*****/
 .ck-content blockquote {
  color: var(--carolina-blue);
  font-weight: 300;
@@ -497,89 +476,11 @@ li label {
  font-style: normal;
  color: var(--main-text-color);
 }
-.ck-content blockquote code, .ck-content blockquote kbd, .ck-content blockquote code strong, .ck-content blockquote kbd strong {
+.ck-content blockquote code, .ck-content blockquote code strong {
  font-size: 1.25rem;
 }
-.ck-content blockquote code strong, .ck-content blockquote kbd strong {
+.ck-content blockquote code strong {
  font-weight: 700;
-}
-
-/***asides***/
-.ck-content .admonition.note {
-    --accent-color: var(--blue) !important;
-    --rgb: 56, 136, 255;
-}
-.ck-content .admonition.tip {
-    --accent-color: var(--light-purple) !important;
-    --rgb: 215, 15, 229;
-}
-.ck-content .admonition.important {
-    --accent-color: var(--light-red) !important;
-    --rgb: 242, 155, 126;
-}
-.ck-content .admonition.caution {
-    --accent-color: var(--red) !important;
-    --rgb: 235, 50, 71;
-}
-.ck-content .admonition.warning {
-    --accent-color: var(--yellow) !important;
-    --rgb: 222, 195, 84;
-}
-.ck-content aside.admonition {
-    /*--accent-color: var(--card-border-color);*/
-    --card-background-color: rgba(var(--rgb), .1);
-    border: none;
-    border-left: 3px solid var(--accent-color);
-    box-shadow: var(--card-box-shadow);
-    background: var(--card-background-color);
-    border-radius: 0;
-    padding: 0;
-    margin: 1.5rem 5rem;
-    position: relative;
-    padding-left: 2em;
-    overflow: hidden;
-    font-weight: 300;
-    font-size: 1.35rem;
-}   
-.ck-content aside.admonition::before {
-    color: var(--accent-color);
-    font-family: boxicons !important;
-    position: absolute;
-    top: 0;
-    left: .5em;
-}
-
-/***footnotes***/
-/*inline*/
-span.footnote-reference > sup > a {
-    font-weight: 100;
-    font-size: .9em;
-}
-/*block*/
-div.footnote-section.ck-widget {
-    border: none;
-    border-top: 1px solid var(--cool-gray);
-    border-radius: 0;
-    counter-reset: footnote-counter;
-    margin: 2.5rem 0;
-    padding: 10px 0;
-    opacity: 0.9;
-    font-size: 1.2rem;
-}
-.ck-content span.footnote-back-link {
-    margin-right: 0;
-    position: relative;
-    top: 0;
-}
-.ck-content li.footnote-item:before {
-    content: counter(footnote-counter) ". ";
-    display: inline-block;
-    min-width: 25px;
-    position: relative;
-    right: 0.2em;
-    text-align: right;
-    overflow: hidden;
-    margin-left: -5px;
 }
 
 
@@ -634,6 +535,9 @@ button.tree-floating-button {
 #launcher-pane .launcher-button:hover, button.tree-floating-button:hover, .title-bar-buttons div:hover button, button.icon-action:hover, .icon-action:hover {
  color: var(--carolina-blue) !important;
  border: none !important;
+}
+#launcher-pane button.launcher-button {
+ padding: 0;
 }
 
 /***Calendar***/
@@ -732,14 +636,14 @@ input.form-control.note-autocomplete.note-autocomplete-input.aa-input {
 /*****BUTTONS*****/
 /***modal buttons***/
 button.help-button {
-  color: var(--dark-gray);
-  font-size: 1.7rem;
+    color: var(--dark-gray);
+    font-size: 1.7rem;
 }
 button.help-button:hover {
-  color: var(--carolina-blue);
+    color: var(--carolina-blue);
 }
 button.btn-close {
-  filter: invert(1)
+    filter: invert(1)
 }
 
 /***edit button***/
@@ -900,9 +804,10 @@ div.backlinks-items div:hover {
 .attr-help td {
  color: var(--main-text-color) !important;
 }
-/* .tooltip {
- z-index: 10 !important;
-} */
+.ck.ck-balloon-panel.ck-balloon-panel_visible {
+    display: block;
+    z-index: 100000;
+}
 
 
 /*****DELETION ALERT*****/
@@ -933,8 +838,8 @@ pre::after{
  letter-spacing: 1px;
 }
 
-/***inline code and kbd***/
-.ck-content code, .ck-content code i, .ck-content code strong  {
+/***inline code***/
+.ck-content code, .ck-content code i, .ck-content code strong {
     font-size: .95rem;
     background: var(--deep-blue);
     color: var(--soft-sea-green) !important;
@@ -946,15 +851,6 @@ pre::after{
     background-color: var(--code-select-gray) !important;
     letter-spacing: 1px;
 }
-.ck-content kbd, .ck-content kbd i, .ck-content kbd strong {
-    font-size: .95rem;
-    letter-spacing: 1px;
-    padding: .1rem .3rem;
-    border-radius: .25rem;
-    background-color: var(--table-header-gray);
-    color: var(--carolina-blue);
-}
-
 
 
 /*****CKEDITOR*****/
@@ -1132,8 +1028,8 @@ code.hljs {
  padding:3px 5px;
 }
 .hljs{
- background:#fff;
- color: yellow !important;
+ background: var(--main-background);
+ color: var(--soft-sea-green) !important;
 }
 .hljs-number {
  color: var(--light-green) !important;
@@ -1185,43 +1081,43 @@ code.hljs {
 /*Use the button or alt+z to toggle it on and off*/
 /* hide launcher buttons*/
 .zen-mode button.bx-chevrons-left,.zen-mode #launcher-pane > .component > :not(button.component.button-widget.bx-spa) {
-  display: none !important;
+    display: none !important;
 }
 /*hide note tree*/
 .zen-mode #left-pane {
-  display: none !important;
+    display: none !important;
 }
 /*hide ribbon buttons*/
 .zen-mode .ribbon-container {
-  display: none !important;
+    display: none !important;
 }
 /*hide note title*/
 .zen-mode .title-row {
-  display: none !important;
+    display: none !important;
 }
 /*hide note tabs*/
 .zen-mode .tab-row-widget .tab-row-widget-container {
-  display: none !important;
+    display: none !important;
 }
 /*hide none-essential title-bar buttons*/
 .zen-mode .title-bar-buttons > :not(.top-btn,.minimize-btn,.maximize-btn,.close-btn) {
-  display: none;
+    display: none;
 }
 /*hide preview of child notes*/
 .zen-mode .note-list-widget {
-  display: none !important;
+    display: none !important;
 }
 /*hide backlink, code buttons, etc.*/
 .zen-mode .floating-buttons-children {
-  display: none !important;
+    display: none !important;
 }
 /*hide nonessential center pane widgets*/
 .zen-mode #center-pane > :not(.split-note-container-widget) {
-  display: none !important;
+    display: none !important;
 }
 /*hide right pane*
 .zen-mode #right-pane {
-  display: none !important;
+    display: none !important;
 }
 
 /***Theme Switcher***/
