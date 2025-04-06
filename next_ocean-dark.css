@@ -635,6 +635,9 @@ button.tree-floating-button {
  color: var(--carolina-blue) !important;
  border: none !important;
 }
+#launcher-pane button.launcher-button {
+  padding: 0;
+}
 
 /***Calendar***/
 div.dropdown-menu.dropdown-menu-right > div.calendar-dropdown-widget > div.calendar-body > a.calendar-date:hover, .calendar-dropdown-widget .calendar-btn:hover {
