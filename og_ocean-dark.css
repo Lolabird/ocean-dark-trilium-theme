@@ -634,6 +634,7 @@ input.form-control.note-autocomplete.note-autocomplete-input.aa-input {
 /***modal buttons***/
 button.help-button {
   color: var(--dark-gray);
+  padding: 0;
 }
 button.help-button:hover {
   color: var(--carolina-blue);
