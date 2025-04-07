@@ -230,8 +230,8 @@ html {
 }
 
 *:focus-visible {
-  outline: var(--carolina-blue) auto 1px;
-}
+    outline: var(--carolina-blue) auto 1px;
+}	
 
 
 /*****Image Caption*****/
@@ -303,9 +303,9 @@ html {
  text-align: left;
 }
 .toc kbd {
-  background: transparent;
-  text-decoration: underline;
-  color: inherit;
+    background: transparent;
+    text-decoration: underline;
+    color: inherit;
 }
 
 
@@ -447,10 +447,10 @@ body em, body i {
 color:var(--carolina-blue);
 }
 body u {
-  text-decoration-style: dashed;
+    text-decoration-style: dashed;
 }
-body s {
-  text-decoration-style: double;
+body s, body del {
+    text-decoration-style: double;
 }
 
 
@@ -636,7 +636,7 @@ button.tree-floating-button {
  border: none !important;
 }
 #launcher-pane button.launcher-button {
-  padding: 0;
+ padding: 0;
 }
 
 /***Calendar***/
@@ -735,14 +735,14 @@ input.form-control.note-autocomplete.note-autocomplete-input.aa-input {
 /*****BUTTONS*****/
 /***modal buttons***/
 button.help-button {
-  color: var(--dark-gray);
-  font-size: 1.7rem;
+    color: var(--dark-gray);
+    font-size: 1.7rem;
 }
 button.help-button:hover {
-  color: var(--carolina-blue);
+    color: var(--carolina-blue);
 }
 button.btn-close {
-  filter: invert(1)
+    filter: invert(1)
 }
 
 /***edit button***/
@@ -897,18 +897,18 @@ div.backlinks-items div:hover {
  border: none !important;
 }
 
-.button-widget.bx.component.bx-pencil.visible {
-  padding: 5px 0 30px;
- }
- div.content-floating-buttons.bottom-right {
-  bottom: 5px;
-  right: 10px;
+.button-widget.bx.component.bx-pencil.visible, .button-widget.bx.component.visible.bx-lock-alt {
+ padding: 5px 9px 30px;
+}
+div.content-floating-buttons.bottom-right {
+    bottom: 5px;
+    right: 10px;
 }
 div.content-floating-buttons.bottom-right button.bx.content-floating-buttons {
-  font-size: 130%;
-  padding: 4px;
-  width: 38px;
-  height: 34px;
+    font-size: 130%;
+    padding: 4px;
+    width: 38px;
+    height: 34px;
 }
 
 
@@ -917,8 +917,8 @@ div.content-floating-buttons.bottom-right button.bx.content-floating-buttons {
  color: var(--main-text-color) !important;
 }
 .ck.ck-balloon-panel.ck-balloon-panel_visible {
-  display: block;
-  z-index: 100000;
+    display: block;
+    z-index: 100000;
 }
 
 
@@ -951,7 +951,7 @@ pre::after{
 }
 
 /***inline code and kbd***/
-.ck-content code, .ck-content code i, .ck-content code strong  {
+.ck-content code, .ck-content code i, .ck-content code strong {
     font-size: .95rem;
     background: var(--deep-blue);
     color: var(--soft-sea-green) !important;
@@ -1149,8 +1149,8 @@ code.hljs {
  padding:3px 5px;
 }
 .hljs{
-  background: var(--main-background);
-  color: var(--soft-sea-green) !important;
+ background: var(--main-background);
+ color: var(--soft-sea-green) !important;
 }
 .hljs-number {
  color: var(--light-green) !important;
@@ -1200,22 +1200,22 @@ code.hljs {
 
 /***Zen Mode***/
 .zen div.title-bar-buttons {
-  margin-left: 50px;
+    margin-left: 50px;
 }
 /*hide none-essential title-bar buttons*/
 .zen .title-bar-buttons > :not(.top-btn,.minimize-btn,.maximize-btn,.close-btn) {
-display: none;
+	display: none;
 }
 /*hide nonessential center pane widgets*/
 .zen #center-pane > :not(.split-note-container-widget) {
-display: none !important;
+	display: none !important;
 }
 /*show right pane*/
 body.zen div.gutter {
-  display: block !important;
+    display: block !important;
 }
 body.zen div#right-pane:not(.hidden-int) {
-display: flex !important;
+	display: flex !important;
 }
 
 /***Theme Switcher***/
