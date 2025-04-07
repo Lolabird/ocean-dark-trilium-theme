@@ -636,14 +636,10 @@ input.form-control.note-autocomplete.note-autocomplete-input.aa-input {
 /*****BUTTONS*****/
 /***modal buttons***/
 button.help-button {
-    color: var(--dark-gray);
-    font-size: 1.7rem;
+  color: var(--dark-gray);
 }
 button.help-button:hover {
-    color: var(--carolina-blue);
-}
-button.btn-close {
-    filter: invert(1)
+  color: var(--carolina-blue);
 }
 
 /***edit button***/
