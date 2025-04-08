@@ -1,5 +1,5 @@
 # Ocean Dark (EFAD) Trilium Theme
-Dark theme for [Trilium Notes](https://github.com/zadam/trilium) and [TriliumNext](https://github.com/TriliumNext/Notes) inspired by Juno Ocean.
+Dark blue theme for [Trilium Notes](https://github.com/zadam/trilium) and [TriliumNext](https://github.com/TriliumNext/Notes) inspired by [Juno Ocean](https://github.com/EliverLara/Juno).
 
 ![Text Showcase](/screenshots/OceanDark_main.png)
 
@@ -8,8 +8,8 @@ Dark theme for [Trilium Notes](https://github.com/zadam/trilium) and [TriliumNex
 * Dark theme
 * High contrast
 * Scrolling tables with sticky headers on both axes
-* Vertical floating buttons that have much less overlap with content of notes
-* Different styles to distinguish between different types of links
+* Vertical floating buttons for less content overlap
+* Different styles for different types of links
 * Custom fonts
 * Bright colors
 
@@ -71,9 +71,7 @@ The right panel is enabled by default. If you would like to disable this in the 
 }
 ```
 
-
 https://github.com/user-attachments/assets/9a1724de-d5ec-4e5a-a5eb-c18a4f372a5c
-
 
 In TriliumNext, you will need to find and comment out this code:
 
@@ -87,10 +85,7 @@ body.zen div#right-pane:not(.hidden-int) {
 }
 
 ```
-
-
 https://github.com/user-attachments/assets/1ce4cc08-302d-44d7-904c-c98a5c15fdf2
-
 
 ##### Added Features
 * Window control buttons are still accessible in zen mode*
@@ -108,24 +103,24 @@ Please go to each addon's respective page for instructions on how to enable thes
 ## Screenshots
 The following screenshots are from TriliumNext. Most of the features shown are also available in either OG Trilium or can be included via addons. However, some features, like cards (excluding quotes) and <kbd>kbd</kbd>, are only available in TriliumNext.
 
-
 https://github.com/user-attachments/assets/e1bf9b3e-19c6-43a3-a8e3-6cc578a5c1d9
-
 
 ![Relation Map](/screenshots/Ocean_Relation_Map.png)
 
 ![Code Note](/screenshots/Ocean_Code.png)
 
-
 https://github.com/user-attachments/assets/4d95d671-6552-4120-b83e-83c2cd06f316
-
 
 ## Credits and Resources
 ### Fonts
 * Jost: https://indestructibletype.com/Jost.html
 * JetBrainsMono: https://www.jetbrains.com/lp/mono/
 
-### Desktop Themes
+### Desktop Theme
+Juno Ocean
+* KDE: https://store.kde.org/p/1427568/
+* Gnome: https://www.gnome-look.org/p/1280977
+* GitHub: https://github.com/EliverLara/Juno
 
 
 ### Addons Featured in the Screenshots and Videos
@@ -138,4 +133,4 @@ https://github.com/user-attachments/assets/4d95d671-6552-4120-b83e-83c2cd06f316
 * WordCount (Featured in the [Demo Document](https://github.com/zadam/trilium/wiki/Document#demo-document))
 * [Zen Mode](https://github.com/Nriver/awesome-trilium/issues/44)
 
-Find more addons made by the Trilium community at [Nriver's Awesome Trilium](https://github.com/Nriver/awesome-trilium?tab=readme-ov-file#%EF%B8%8F-widgets), and check out my other theme [Stellar Dark](https://github.com/Lolabird/stellar-dark-theme-trilium) while you're at it!!
+Find more addons made by the Trilium community at [Nriver's Awesome Trilium](https://github.com/Nriver/awesome-trilium?tab=readme-ov-file#%EF%B8%8F-widgets), and check out my other themes [Stellar Dark](https://github.com/Lolabird/stellar-dark-theme-trilium) and [EverForest Ant Dark](https://github.com/Lolabird/everforest-ant-dark-trilium-theme) while you're at it!!
