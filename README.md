@@ -101,7 +101,7 @@ Please go to each addon's respective page for instructions on how to enable thes
 * [Syntax Highlight](https://github.com/antoniotejada/Trilium-SyntaxHighlightWidget)
 
 ## Screenshots
-The following screenshots are from TriliumNext. Most of the features shown are also available in either OG Trilium or can be included via addons. However, some features, like cards (excluding blockquotes) and <kbd>kbd</kbd>, are only available in TriliumNext.
+(C) The following screenshots are from TriliumNext. Most of the features shown are also available in either OG Trilium or can be included via addons. However, some features, like cards (excluding blockquotes) and <kbd>kbd</kbd>, are only available in TriliumNext.
 
 https://github.com/user-attachments/assets/e1bf9b3e-19c6-43a3-a8e3-6cc578a5c1d9
 
