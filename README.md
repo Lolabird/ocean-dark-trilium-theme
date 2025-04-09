@@ -1,4 +1,4 @@
-# Ocean Dark (EFAD) Trilium Theme
+# Ocean Dark Trilium Theme
 Dark blue theme for [Trilium Notes](https://github.com/zadam/trilium) (OG Trilium) and [TriliumNext](https://github.com/TriliumNext/Notes) inspired by [Juno Ocean](https://github.com/EliverLara/Juno).
 
 ![Text Showcase](/screenshots/OceanDark_main.png)
