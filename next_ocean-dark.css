@@ -411,7 +411,7 @@ tr:nth-child(odd) {
  background-color: var(--table-header-gray) !important;
 }
 .ck-content .table table tbody tr:nth-child(even) th, .ck-content .table table tbody tr:nth-child(even) td{
- background-color: var(--deep-blue) !important;
+ background-color: var(--deep-blue);
 }
 .ck-content .table table {
  width: 100%;
