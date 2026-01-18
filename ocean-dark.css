@@ -232,6 +232,9 @@ html {
 *:focus-visible {
     outline: var(--carolina-blue) auto 1px;
 }	
+.component.note-detail {
+    margin: auto;
+}
 
 
 /*****Image Caption*****/
